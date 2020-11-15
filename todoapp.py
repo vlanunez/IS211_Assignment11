@@ -8,7 +8,7 @@ todo_items = []
 
 @app.route('/')
 def index():
-    return render_template('index.html', todo_item=todo_items)
+    return render_template('index.html', todo_items=todo_items)
 
 
 @app.route('/submit', methods=['POST'])
